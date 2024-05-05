@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+}
+
+body {
+    margin-top: 80px; /* Adjusted margin-top to account for the fixed header */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 9%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Added z-index to ensure the header appears above other elements */
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bolder;
+}
+header .logo span {
+    color: pink;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    color: #666066;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: pink;
+}
+
+
+section{
+    padding : 2rem 9%;
+}
+
+.body{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url("bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.Home .content{
+    max-width: 50rem;
+}
+.Home .content h3{
+    font-size: 75px;
+    color: #333;
+}
+.Home .content span{
+    font-size: xx-large;
+    color: pink;
+    padding: 1rem;
+    line-height: 1.5;
+}
+.Home .content p{
+    font-size: medium;
+    color: #676464;
+    padding: 1rem;
+    line-height: 1.5;      
+}
+
+.button{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #676464;
+    color:#fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.button:hover{
+    background: pink;
+}
+ 
+
+/*contact phase*/
+
+#contact-heading {
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    padding: .5rem;
+    margin: 2rem 0;
+    background-color: rgba(255, 51, 153, 0.05);
+}
+#contact-heading span {
+    color: pink;
+}
+
+section.contact-us {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 50px;
+}
+#Contact {
+    padding: 2rem 9%;
+    background-color: #fff; 
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+#Contact .row{
+    display: flex;
+    flex-wrap:  wrap-reverse;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+#Contact form {
+    flex: 1 1 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+#Contact .row form .box{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+.box:focus{
+    border-color: pink;
+} 
+#Contact .row form textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+    resize: none;
+    box-sizing: border-box;
+}
+.btn {
+    background-color: pink;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: rgb(218, 204, 232);
+}
+.contact-us {
+display: grid;
+grid-template-columns: repeat(2 , 1fr);
+gap: 30px;
+}
+.image {
+    text-align: center;
+}
+.contactus-img{
+    height: 655px;
+    width: 550px;
+    border-radius: 0.5rem;
+}
+#contact-heading{
+text-align: center;
+grid-column: 1/3;
+}
+
+footer {
+    background-color: rgb(220, 203, 207);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+footer content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

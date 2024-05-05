@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 9%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.logo {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bolder;
+}
+header .logo span {
+    color: pink;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: rgba(255, 51, 153, 0.05);
+}
+.heading span {
+    color: pink;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.about {
+    padding: 2rem 9%;
+}
+.about .row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.about .row .videocontainer {
+    flex: 1 1 40rem;
+    position: relative;
+}
+.about .row .videocontainer video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1.5rem solid #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.about .row .videocontainer h3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 3rem;
+    background: #fff;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.about .row .content {
+    flex: 1 1 40rem;
+}
+.about .row .content h3 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.about .row .content p {
+    color: #666;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+ul li {
+    color: rgb(242, 180, 190);
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+ul li:before {
+    content: '\2022'; 
+    color:pink; 
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+p {
+    color: #2a2a2a;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact {
+    padding: 2rem 9%;
+    background-color: #fff; 
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.contact p {
+    color: #2a2a2a;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+h5 {
+    margin-bottom: 60px;
+}
+#footer-paragraph{
+    color: #fff;
+    margin: 0;
+}
